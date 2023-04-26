@@ -64,7 +64,10 @@ export class Favoritos {
     // ou seja, essa função é ASSINCRONA
     async adicionar(username){
         try{
-            // variável para 
+            // variável para armazenar o boolean da função anônima
+            // dentro do array de objetos, utilizamos o método 'find'
+            // se o que for digitado como 'username' for estritamente igual ao
+            // login de algum objeto que já está no array, então o usuário já está inserido
             const userExiste = this.entradas.find(entrada => entrada.login === username)
             console.log(userExiste)
 
