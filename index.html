@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos do Github</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <script src="js/script.js" type="module" defer></script>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <h1>Favoritos do Github</h1>
+            <div class="pesquisa">
+                <label class="sr-only" for="input-pesquisa">Usuário do Github</label>
+                <input id="input-pesquisa" type="text" placeholder="Usuário do Github">
+                <button>&plus;</button>
+            </div>
+        </header>
+        <table>
+            <!-- Cabeçalho da Tabela -->
+            <thead>
+                <!-- tr = Linha -->
+                <tr>
+                    <th>Usuário</th>
+                    <th>Repositório</th>
+                    <th>Seguidores</th>
+                    <th>Excluir?</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- removendo a 'tr', o site para de indicar o erro de que já tem uma linha no tbody -->
+                <!-- <tr>
+                    <td class="usuario">
+                        <img src="https://github.com/victorcavassana.png" alt="Imagem de victorcavassana">
+                        <a href="https://github.com/victorcavassana">
+                            <p>Victor Cavassana</p>
+                            <span>victorcavassana</span>
+                        </a>
+                    </td>
+                    <td class="repositorios">
+                        100
+                    </td>
+                    <td class="seguidores">
+                        852
+                    </td>
+                    <td>
+                        <button class="remover">&timesbar;</button>
+                    </td>
+                </tr> -->
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </div>
+</body>
+
+</html>
